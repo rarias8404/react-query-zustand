@@ -3,7 +3,7 @@ import { useFetchRepositories } from "./hooks/useRepos";
 import { useFavoriteReposStore } from "./store/favoriteStores";
 
 const App = () => {
-  const { data, isLoading } = useFetchRepositories();
+  const { data, isLoading } = useFetchRepositories("rarias8404");
   const { favoriteReposIds } = useFavoriteReposStore();
 
   if (isLoading) return <div>Loading....</div>;
